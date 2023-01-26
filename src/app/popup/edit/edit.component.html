@@ -1,0 +1,52 @@
+<h1 mat-dialog-title>Edit User</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>User Id</mat-label>
+    <input matInput [(ngModel)]="data.user.id">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>First Name</mat-label>
+    <input matInput [(ngModel)]="data.user.firstName">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Last Name</mat-label>
+    <input matInput [(ngModel)]="data.user.lastName">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Age</mat-label>
+    <input matInput [(ngModel)]="data.user.age">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Gender</mat-label>
+    <input matInput [(ngModel)]="data.user.gender">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Email</mat-label>
+    <input matInput [(ngModel)]="data.user.email">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Phone Number</mat-label>
+    <input matInput [(ngModel)]="data.user.phone">
+  </mat-form-field>
+ 
+  <mat-form-field appearance="fill">
+    <mat-label>Company Name</mat-label>
+    <input matInput [(ngModel)]="data.user.company.name">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Address</mat-label>
+    <input matInput [(ngModel)]="data.user.address.address">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>City</mat-label>
+    <input matInput [(ngModel)]="data.user.address.city">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>State</mat-label>
+    <input matInput [(ngModel)]="data.user.address.state">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
+</div>
